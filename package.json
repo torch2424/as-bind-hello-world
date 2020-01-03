@@ -1,0 +1,31 @@
+{
+  "name": "as-bind-hello-world",
+  "version": "0.0.1",
+  "description": "A hello world for as-bind",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serve",
+    "wasm:build": "asc assembly/index.ts -b assembly/index.wasm --sourceMap assembly/index.wasm.map -t assembly/index.wat --validate --runtime full -O3",
+    "browser:build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torch2424/as-bind-hello-world.git"
+  },
+  "author": "Aaron Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torch2424/as-bind-hello-world/issues"
+  },
+  "homepage": "https://github.com/torch2424/as-bind-hello-world#readme",
+  "dependencies": {
+    "as-bind": "0.0.2"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.8.1",
+    "rollup": "^1.27.14",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "serve": "^11.3.0"
+  }
+}
