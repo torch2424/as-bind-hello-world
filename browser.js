@@ -1,4 +1,4 @@
-import AsBind from 'as-bind';
+import { AsBind } from 'as-bind';
 
 const asyncTask = async () => {
   const asBindInstance = await AsBind.instantiate(fetch('./assembly/index.wasm'));

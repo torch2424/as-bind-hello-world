@@ -1,4 +1,4 @@
-const AsBind = require('as-bind');
+const { AsBind } = require('as-bind');
 const fs = require('fs');
 
 const wasm = fs.readFileSync('./assembly/index.wasm');

@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/torch2424/as-bind-hello-world#readme",
   "dependencies": {
-    "as-bind": "0.0.2"
+    "as-bind": "0.1.0"
   },
   "devDependencies": {
     "assemblyscript": "^0.8.1",
