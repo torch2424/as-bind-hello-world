@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "serve",
-    "wasm:build": "asc assembly/index.ts -b assembly/index.wasm --sourceMap assembly/index.wasm.map -t assembly/index.wat --validate --runtime full -O3",
+    "wasm:build": "asc ./node_modules/as-bind/lib/assembly/as-bind.ts assembly/index.ts -b assembly/index.wasm --sourceMap assembly/index.wasm.map -t assembly/index.wat --validate --runtime full -O3",
     "browser:build": "rollup -c"
   },
   "repository": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/torch2424/as-bind-hello-world#readme",
   "dependencies": {
-    "as-bind": "0.1.0"
+    "as-bind": "0.1.2"
   },
   "devDependencies": {
     "assemblyscript": "^0.8.1",
