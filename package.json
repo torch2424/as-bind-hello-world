@@ -26,6 +26,6 @@
     "rollup": "^1.27.14",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "serve": "^11.3.0"
+    "serve": "^14.2.0"
   }
 }
